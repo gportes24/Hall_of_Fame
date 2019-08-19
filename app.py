@@ -22,7 +22,7 @@ name3 = 'Kirby Puckett'
 name4 = 'Tony Gwinn'
 tabtitle = 'baseball'
 sourceurl = 'https://www.baseball-reference.com'
-githublink = 'https://github.com/austinlasseter/dash-linechart-example'
+githublink = 'https://github.com/gportes24/Hall_of_Fame'
 
 ########### Set up the chart
 
