@@ -5,18 +5,21 @@ import plotly.graph_objs as go
 
 ########### Define your variables ######
 
-myheading = "Baseball Stats from the 1950s"
-mytitle = "Batting Averages for 3 Hall of Famers"
-x_values = ['1954', '1955', '1956', '1957', '1958', '1959']
-y1_values = [345, 356, 345, 388, 328, 254]
-y2_values = [300, 306, 353, 365, 304, 285]
-y3_values = [280, 314, 328, 322, 326, 355]
-color1 = '#fc9403'
-color2 = '#0307fc'
-color3 = '#9003fc'
-name1 = 'Ted Williams'
-name2 = 'Mickey Mantle'
-name3 = 'Hank Aaron'
+myheading = "Baseball Stats from the 1980s"
+mytitle = "Batting Averages for 4 Hall of Famers"
+x_values = ['1984', '1985', '1986', '1987', '1988', '1989']
+y1_values = [293, 314, 263, 291, 305, 274]
+y2_values = [325, 368, 357, 363, 366, 330]
+y3_values = [296, 288, 328, 332, 356, 339]
+y4_values = [351, 317, 329, 370, 313, 336]
+color1 = '#189716'
+color2 = '#EF0C29'
+color3 = '0C94EF'
+color4 = '#544338'
+name1 = 'Rickey Henderson'
+name2 = 'Wade Boggs'
+name3 = 'Kirby Puckett'
+name4 = 'Tony Gwinn'
 tabtitle = 'baseball'
 sourceurl = 'https://www.baseball-reference.com'
 githublink = 'https://github.com/austinlasseter/dash-linechart-example'
@@ -44,10 +47,17 @@ trace2 = go.Scatter(
     mode = 'lines',
     marker = {'color': color3},
     name = name3
+    
+trace3 = go.Scatter(
+    x = x_values,
+    y = y4_values,
+    mode = 'lines',
+    marker = {'color': color3},
+    name = name4
 )
 
 # assign traces to data
-data = [trace0, trace1, trace2]
+data = [trace0, trace1, trace2, trace3]
 layout = go.Layout(
     title = mytitle
 )
