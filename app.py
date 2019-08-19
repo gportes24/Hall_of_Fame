@@ -47,7 +47,7 @@ trace2 = go.Scatter(
     mode = 'lines',
     marker = {'color': color3},
     name = name3
-    
+)    
 trace3 = go.Scatter(
     x = x_values,
     y = y4_values,
