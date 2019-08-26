@@ -8,7 +8,7 @@ import plotly.graph_objs as go
 myheading = "Baseball Stats from the 1980s"
 mytitle = "Batting Averages for 4 Hall of Famers"
 x_values = ['1984', '1985', '1986', '1987', '1988', '1989']
-y1_values = [293, 314, 263, 291, 305, 274]
+y1_values = [293, 314, 342, 323, 305, 312]
 y2_values = [325, 368, 357, 363, 366, 330]
 y3_values = [296, 288, 328, 332, 356, 339]
 y4_values = [351, 317, 329, 370, 313, 336]
@@ -16,7 +16,7 @@ color1 = '#189716'
 color2 = '#EF0C29'
 color3 = '#5A8DA6'
 color4 = '#544338'
-name1 = 'Rickey Henderson'
+name1 = 'Vladimir Guerrero'
 name2 = 'Wade Boggs'
 name3 = 'Kirby Puckett'
 name4 = 'Tony Gwinn'
@@ -47,7 +47,7 @@ trace2 = go.Scatter(
     mode = 'lines',
     marker = {'color': color3},
     name = name3
-)    
+)
 trace3 = go.Scatter(
     x = x_values,
     y = y4_values,
